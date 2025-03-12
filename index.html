@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marko's Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i.ibb.co/jZQDMLct/logo-1.png"> <!-- Replace with your actual favicon URL -->
 
     <!-- Open Graph Meta Tags for Discord Embed -->
-<meta property="og:title" content="Marko's Portfolio">
-<meta property="og:description" content="Check out my portfolio! I specialize in front-end development, UI/UX design, and JavaScript projects.">
-<meta property="og:image" content="https://yourwebsite.com/thumbnail.png"> <!-- Replace with your actual image URL -->
-<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:title" content="My Portfolio">
+<meta property="og:description" content="Welcome to my portfolio, here you can find a bunch of info about my work and me also :D">
+<meta property="og:image" content="https://i.ibb.co/jZQDMLct/logo-1.png"> <!-- Replace with your actual image URL -->
+<meta property="og:url" content="https://marko21022.github.io">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#3498db"> <!-- Sets the embed color -->
 
@@ -19,40 +20,39 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>Marko's Portfolio</h1>
+        <h1>MY PORTFOLIO</h1>
     </header>
 
     <!-- About Section -->
     <section class="about">
         <h2>About Me</h2>
-        <p class="about-text">I am a designer and developer who specializes in front-end development, creating intuitive user experiences, and crafting beautiful designs. Passionate about coding and design, I aim to make the web a more functional and aesthetically pleasing place. I enjoy building projects that challenge me and push me to learn new technologies and methods. Currently, I am focused on expanding my skills in JavaScript and React while also working on various personal design projects.</p>
+        <p class="about-text">Hello, I am Marko. I am a 14-year-old professional Digital and Website Designer. I have a passion for creating visually appealing and user-friendly designs. My journey in design started a few years ago, and I have been honing my skills ever since. I am always eager to learn new techniques and take on challenging projects.</p>
     </section>
 
     <!-- Skills Section -->
     <section class="skills">
         <h2>Skills & Technologies</h2>
-        <div class="skill">JavaScript</div>
-        <div class="skill">HTML & CSS</div>
-        <div class="skill">React</div>
-        <div class="skill">Node.js</div>
         <div class="skill">Photoshop</div>
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">Node.js</div>
         <div class="skill">Figma</div>
+        <div class="skill">ER:LC Server Management</div>
     </section>
 
     <!-- Portfolio Section -->
     <section class="portfolio">
         <h2>My Projects</h2>
         <div class="project">
-            <h3>Project 1</h3>
-            <p>A description of project 1.</p>
+            <h3>Washington State Roleplay</h3>
+            <p>I worked for the biggest <a class="special-a" href="https://www.roblox.com/games/2534724415/Emergency-Response-Liberty-County" target="_blank">ER:LC</a> Washington State Server as a Deputy Founder, but retired not long ago. </p>
         </div>
         <div class="project">
-            <h3>Project 2</h3>
-            <p>A description of project 2.</p>
+            <h3>Federate</h3>
+            <p>I helped a popular ER:LC server called <a class="special-a" href="https://www.federateerlc.com" target="_blank">Federate</a> make a website that helps their designers a bunch. They search up a Roblox username and all the account info they need pops up.</p>
         </div>
         <div class="project">
-            <h3>Project 3</h3>
-            <p>A description of project 3.</p>
+            <h3>WSRP Utilities</h3>
+            <p>I worked on a Discord Bot for <a class="special-a" href="https://discord.gg/wsrpf">WSRP</a> that helps with Discord and ER:LC management.</p>
         </div>
     </section>
 
@@ -60,16 +60,16 @@
     <section class="testimonials">
         <h2>Testimonials</h2>
         <div class="testimonial">
-            <p>"Marko's work has transformed the way we engage with our users. Highly recommend!"</p>
-            <p>- Client 1</p>
+            <p>"Helped me develop <a href="https://tgman.xyz" target="_blank">my site!</a></p>
+            <p>- Tasg</p>
         </div>
         <div class="testimonial">
             <p>"Absolutely fantastic experience working with Marko! His attention to detail is incredible."</p>
-            <p>- Client 2</p>
+            <p>- Darren</p>
         </div>
         <div class="testimonial">
-            <p>"Marko exceeded our expectations in both design and functionality. He truly is a web wizard!"</p>
-            <p>- Client 3</p>
+            <p>"Marko helped me on a ton of projects! Trully the best out there."</p>
+            <p>- Nik</p>
         </div>
     </section>
 
@@ -77,25 +77,23 @@
     <section class="contact">
         <h2>Contact Me</h2>
         <p>If you want to collaborate or just say hi, feel free to reach out!</p>
-        <a href="mailto:marko@example.com">Email Me</a>
-        <a href="https://www.linkedin.com/in/marko">LinkedIn</a>
-        <a href="https://github.com/marko">GitHub</a>
+        <a href="mailto:marko21022012@gmail.com">Email Me</a>
+        <a href="https://discord.com/users/1143806923754438777">Discord</a>
+        <a href="https://www.instagram.com/marko.stojanovic21/">Instagram</a>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Marko's Portfolio. All rights reserved.</p>
     </footer>
+<!-- Popup -->
+<div class="popup" id="popup">
+    <span class="close-btn" id="closePopup">×</span> <!-- Close Button -->
+    <h2 id="popupTitle">Information</h2> <!-- Title -->
+    <p>This website is still in beta and some features might not work as intended!</p>
+</div>
+<!-- Link to the external JS file -->
+<script src="script.js"></script>
 
-    <!-- Popup Overlay -->
-    <div class="popup-overlay" id="popupOverlay"></div>
-
-    <!-- Popup -->
-    <div class="popup" id="popup">
-        <h3>Information</h3>
-        <p>This page is still in beta, so expect some bugs to happend.</p>
-        <button onclick="closePopup()">Close</button>
-    </div>
-    <script src="script.js"></script>
 </body>
 </html>
