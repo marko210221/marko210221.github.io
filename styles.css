@@ -360,3 +360,72 @@ a:hover::after {
     margin-bottom: 20px;
     transition: all 0.3s ease;/
 }
+
+@media (max-width: 768px) {
+    .portfolio .project {
+        width: 100%; /* Ensure it takes full width on smaller screens */
+    }
+}
+
+
+@media (hover: none) {
+    .skills .skill:hover,
+    .portfolio .project:hover {
+        transform: none;
+        box-shadow: none;
+        background-color: inherit;
+    }
+}
+
+
+body {
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        display: none !important;
+    }
+}
+
+/* Adjust for tablets */
+@media (max-width: 768px) {
+    .portfolio .project {
+        width: calc(50% - 1rem); /* 2 projects per row */
+    }
+}
+
+/* Adjust for phones */
+@media (max-width: 480px) {
+    .portfolio .project {
+        width: 100%; /* Full width on small screens */
+        margin: 0 auto; /* Center them */
+    }
+}
+
+.portfolio, .skills, .testimonials {
+    overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+/* Remove tilt effect on mobile */
+@media (max-width: 768px) {
+    .portfolio .project {
+        transform: none; /* Removes the tilt effect */
+    }
+}
+
+/* Remove hover effect and add space between projects on mobile */
+@media (max-width: 768px) {
+    .portfolio .project {
+        transform: none; /* Remove tilt effect */
+        box-shadow: none; /* Remove hover shadow effect */
+        background-color: #333; /* Ensure the background color remains the same */
+        margin-bottom: 20px; /* Add space between each project */
+    }
+
+    /* Ensure the projects don't touch each other */
+    .portfolio .project:nth-child(n+2) {
+        margin-left: 0; /* Remove any previous margin-left from hover effect */
+    }
+}
